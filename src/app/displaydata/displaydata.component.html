@@ -1,0 +1,20 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <table class="table table-bordered">
+                <tr class="backgroundStyle">
+                    <th >Id</th>
+                    <th>UserId</th>
+                    <th>Title</th>
+                    <th>Body</th>
+                </tr>
+                <tr class="backgroundColor" *ngFor = "let data of details">
+                    <td>{{data.id}}</td>
+                    <td (click) ="getByDetailId(data.userId)">{{data.userId}}</td>
+                    <td>{{data.title}}</td>
+                    <td>{{data.body}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+
+<div class="container-fluid">
+    <button  class="btn btn-secondary mt-3 " (click)= "main()">Main Page </button>
+    <h1 class="mt-2 textStyle">Displaying Particular UserID'S</h1>
+    <div class="row mt-5">
+        <div class="col-12">
+            <table class="table table-bordered">
+                <tr class="backgroundStyle">
+                    <th >Id</th>
+                    <th>UserId</th>
+                    <th>Title</th>
+                    <th>Body</th>
+                </tr>
+                <tr *ngFor = "let data of UserId">
+                    <td>{{data.id}}</td>
+                    <td >{{data.userId}}</td>
+                    <td>{{data.title}}</td>
+                    <td>{{data.body}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
